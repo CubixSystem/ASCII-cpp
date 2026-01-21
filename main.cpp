@@ -1,6 +1,5 @@
 #include "DemoRunner.hpp"
 
-int main()
-{
+int main() {
     plotter::DemoRunner::RunAllDemos();
 }

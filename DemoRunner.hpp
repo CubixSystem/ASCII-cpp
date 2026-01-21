@@ -1,12 +1,10 @@
 #pragma once
 #include <filesystem>
 
-namespace plotter
-{
+namespace plotter {
 
-class DemoRunner
-{
-public:
+class DemoRunner {
+  public:
     static void RunAllDemos();
 
     static void DemoBasicPlotter();
@@ -18,9 +16,9 @@ public:
     static void DemoCustomPalettes();
     static void CompareFillAlgorithms();
 
-private:
+  private:
     static void EnsureDemoDirectory();
-    static std::filesystem::path GetDemoPath(const std::string& filename);
+    static std::filesystem::path GetDemoPath(const std::string &filename);
 };
 
 } // namespace plotter
